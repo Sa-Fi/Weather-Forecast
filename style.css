@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+body {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-family: Poiret One;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.692); /* Black overlay */
+    z-index: 1;
+}
+
+.weather-container {
+    position: relative;
+    background: rgba(29, 28, 28, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+    width: 380px;
+    color: white;
+    z-index: 2; /* Ensure it is above the overlay */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+}
+
+.weather-container img {
+    width: 70px;
+    height: 60px;
+}
+
+.weather-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.weather-condition {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.weather-details div {
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.form button {
+    padding: 5px;
+}
+.date{
+    margin-top: 15px;
+}
